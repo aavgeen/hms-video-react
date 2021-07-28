@@ -19,12 +19,12 @@ export const HMSThemeProvider = ({
   config: any;
   appBuilder: appBuilder;
 }) => {
-  if (appBuilder.theme === 'dark') {
-    document.documentElement.classList.add('dark');
-  }
-  if (appBuilder.theme === 'light') {
-    document.documentElement.classList.remove('dark');
-  }
+  // if (appBuilder.theme === 'dark') {
+  //   document.documentElement.classList.add('dark');
+  // }
+  // if (appBuilder.theme === 'light') {
+  //   document.documentElement.classList.remove('dark');
+  // }
   const twConfig = merge(defaultTailwindConfig, config);
   const { tw } = create(
     { ...twConfig, darkMode: 'class', mode: 'silent' } || {},
