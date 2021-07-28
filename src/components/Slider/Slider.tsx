@@ -4,27 +4,19 @@ import { withStyles } from '@material-ui/core/styles';
 
 export const Slider = withStyles({
   root: {
-    color: document.documentElement.classList.contains('dark')
-      ? 'white'
-      : 'black',
+    color: 'white',
     maxWidth: '100%',
   },
   thumb: {
-    backgroundColor: document.documentElement.classList.contains('dark')
-      ? 'black'
-      : 'white',
+    backgroundColor: 'black',
     border: '2px solid currentColor',
     '&:focus, &:hover, &$active': {
       boxShadow: 'inherit',
     },
-    color: document.documentElement.classList.contains('dark')
-      ? 'white'
-      : 'black',
+    color: 'white',
   },
   active: {},
   valueLabel: {
-    color: document.documentElement.classList.contains('dark')
-      ? 'white'
-      : 'black',
+    color: 'white',
   },
 })(MaterialSlider);
